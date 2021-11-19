@@ -1,0 +1,22 @@
+{
+  "name": "spam-filter-bot",
+  "version": "1.0.0",
+  "description": "Discord anti-spam bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quentinmay/spam-filter-bot.git"
+  },
+  "author": "Quentin May, Dante Padley, Enrico Salapong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quentinmay/spam-filter-bot/issues"
+  },
+  "homepage": "https://github.com/quentinmay/spam-filter-bot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3"
+  }
+}
