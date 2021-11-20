@@ -39,7 +39,7 @@ Just startup the script now that everything has been built and you've filled you
 node index.js
 ```
 
-References:
-https://towardsdatascience.com/na%C3%AFve-bayes-spam-filter-from-scratch-12970ad3dae7
-https://www.kaggle.com/uciml/sms-spam-collection-dataset
-https://www.baeldung.com/cs/spam-filter-training-sets
+## References:
+[Project base reference](https://towardsdatascience.com/na%C3%AFve-bayes-spam-filter-from-scratch-12970ad3dae7)
+[Dataset](https://www.kaggle.com/uciml/sms-spam-collection-dataset)
+[More on bayes/spam concepts](https://www.baeldung.com/cs/spam-filter-training-sets)

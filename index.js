@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const fs = require('fs');
+const table = require('./table.js');
 
 const config = require("./config.json")
 let client = new Discord.Client();
