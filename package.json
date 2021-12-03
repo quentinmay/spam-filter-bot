@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/quentinmay/spam-filter-bot#readme",
   "dependencies": {
+    "csv-parser": "^3.0.0",
     "discord.js": "^12.5.3"
   }
 }
