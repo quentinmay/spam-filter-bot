@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const fs = require('fs');
-const table = require('./table.js');
+let  functions =  require('./functions.js');
 
 const config = require("./config.json")
 let client = new Discord.Client();
@@ -19,9 +19,36 @@ function setStatus() {
 }
 
 
+
+function checkSpam(string) {
+
+    let rawdata = fs.readFileSync('table.json');
+    let tableObject = JSON.parse(rawdata);
+    const table = new Map(Object.entries(tableObject));
+
+    let func = [functions.unorthodoxCharacters, functions.suspiciousWords, functions.containsLinks, functions.containsPhoneNumber];
+    let i = 1;
+    let stringAr = [];
+    for (var run of func) {
+        stringAr.push(`F${i}=${run(string)}`);
+        i++;
+    }
+    let result = table.get(stringAr.join(","));
+
+    return result.spamProb > result.hamProb;
+}
+
 //On Message Event Handler
 client.on('message', (msg) => {
-    console.log(`${msg.channel.name} : ${msg.content}`)
+    if (msg.channel.name == "test-spam") {
+        console.log(`${msg.channel.name} : ${msg.content}`)
+        if (!checkSpam(msg.content)) {
+            msg.react('✅');
+        } else {
+            msg.react('❌');
+        }
+    }
+
 });
 
 
