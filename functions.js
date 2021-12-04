@@ -4,15 +4,15 @@ exports.get50 = function get50() {
 }
 
 exports.get20 = function get20() {
-     return "20";
- }
+    return "20";
+}
 
 /*
 Contains ANY unorthodox characters. Just anything you cant find on a normal english keyboard. Ignore emojis
 */
- exports.unorthodoxCharacters = function unorthodoxCharacters(content) {
-    for(let i = 0; i < content.length; i++){
-        if (content.charCodeAt(i) > 126){
+exports.unorthodoxCharacters = function unorthodoxCharacters(content) {
+    for (let i = 0; i < content.length; i++) {
+        if (content.charCodeAt(i) > 126) {
             //console.log(content.charCodeAt(i));
             return true
         }
@@ -35,20 +35,20 @@ Contains lots of capital lets. Maybe 50% to start? Only valid for strings longer
 //probF2YesGivenHam 0.020518134715025907
 exports.lotsOfCapitals = function lotsOfCapitals(content) {
     // if (content.length >= 30) {
-        let capCount = 0;
-        for (let i = 0; i < content.length; i++) {
-            ch = content.charAt(i);
-            if (isNaN(ch * 1) && ch == ch.toUpperCase()) {
-                capCount = capCount + 1;
-            }
+    let capCount = 0;
+    for (let i = 0; i < content.length; i++) {
+        ch = content.charAt(i);
+        if (isNaN(ch * 1) && ch == ch.toUpperCase()) {
+            capCount = capCount + 1;
         }
-        if (capCount > (content.length * .75)) {
-            //console.log(content);
-            return true;
-        }
-        else {
-            return false;
-        }
+    }
+    if (capCount > (content.length * .75)) {
+        //console.log(content);
+        return true;
+    }
+    else {
+        return false;
+    }
     // } else{
     //     return false;
     // }
@@ -75,8 +75,8 @@ exports.suspiciousWords = function suspiciousWords(content) {
     //maybe we take this opportunity to find the words with the highest frequency in spam messages
     //maybe top 8?
     let words = ['winner', 'congratulations', 'free', 'claim', 'guaranteed', 'join',]
-    for(word of content.split(" ")){
-        if(words.includes(word.toLowerCase())){
+    for (word of content.split(" ")) {
+        if (words.includes(word.toLowerCase())) {
             return true;
         }
     }
@@ -104,9 +104,9 @@ Contains a phone number (can be easily done in regex)
 
 exports.containsPhoneNumber = function containsPhoneNumber(content) {
 
-const rx = new RegExp(/(\D{0,4}\d){6,15}/g);
+    const rx = new RegExp(/(\D{0,4}\d){6,15}/g);
     // let rx = new RegExp(/\D{0,4}\d{6,15}/g);
-    if(rx.test(content)){
+    if (rx.test(content)) {
         return true;
     }
     return false;
