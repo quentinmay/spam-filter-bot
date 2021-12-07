@@ -42,10 +42,10 @@ node index.js
 ## Features
 ![image](https://user-images.githubusercontent.com/73214439/144963321-2f6a543b-76f6-4b05-80fb-039be5db1515.png)
 
-## Truth Table
+## 🧮Truth Table
 ![image](https://user-images.githubusercontent.com/73214439/144963350-597616da-9100-411e-8ce1-2332cff1b6ca.png)
 
-## Test Cases
+## ⚠Test Cases
 ![image](https://user-images.githubusercontent.com/73214439/144963385-90732e5f-eef8-46f0-b10b-26053b7f4034.png)
 
 
@@ -53,7 +53,7 @@ node index.js
 ![Clipped-1638845244440-2021-12-06 18-45-57](https://user-images.githubusercontent.com/73214439/144963221-ae44ff33-ddfa-44ad-9a55-6fb2a04fd994.gif)
 
 
-## References:
+## 📚References:
 * [Dataset](https://www.kaggle.com/uciml/sms-spam-collection-dataset)
 * [Project base reference](https://towardsdatascience.com/na%C3%AFve-bayes-spam-filter-from-scratch-12970ad3dae7)
 * [More on bayes/spam concepts](https://www.baeldung.com/cs/spam-filter-training-sets)
