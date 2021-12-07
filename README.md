@@ -54,6 +54,6 @@ node index.js
 
 
 ## References:
-[Project base reference](https://towardsdatascience.com/na%C3%AFve-bayes-spam-filter-from-scratch-12970ad3dae7)
-[Dataset](https://www.kaggle.com/uciml/sms-spam-collection-dataset)
-[More on bayes/spam concepts](https://www.baeldung.com/cs/spam-filter-training-sets)
+* [Dataset](https://www.kaggle.com/uciml/sms-spam-collection-dataset)
+* [Project base reference](https://towardsdatascience.com/na%C3%AFve-bayes-spam-filter-from-scratch-12970ad3dae7)
+* [More on bayes/spam concepts](https://www.baeldung.com/cs/spam-filter-training-sets)
