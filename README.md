@@ -1,4 +1,4 @@
-# Anti-Spam Bot 
+# 🚫 Anti-Spam Bot 
 
 Anti-Spam Bot built for discord servers using [discord.js](https://discord.js.org) and Naive Baiyes Theorem.
 
