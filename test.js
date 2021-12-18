@@ -58,17 +58,7 @@ let testCases = [
 
 let func = [functions.unorthodoxCharacters, functions.suspiciousWords, functions.containsLinks, functions.containsPhoneNumber];
 
-// for (let string of test_strings) {
-//     let i = 1;
-//     let stringAr = [];
-//     for (var run of func) {
-//         stringAr.push(`F${i}=${run(string)}`);
-//         i++;
-//     }
-//     console.log(string);
-//     console.log(table.get(stringAr.join(",")));
 
-// }
 
 testTestCases();
 function testTestCases() {

@@ -1,11 +1,5 @@
 
-exports.get50 = function get50() {
-    return "50";
-}
 
-exports.get20 = function get20() {
-    return "20";
-}
 
 /*
 Contains ANY unorthodox characters. Just anything you cant find on a normal english keyboard. Ignore emojis
